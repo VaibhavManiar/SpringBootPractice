@@ -1,1 +1,5 @@
 rootProject.name = 'SpringBootPractice'
+include 'api'
+include 'core'
+include 'web'
+
