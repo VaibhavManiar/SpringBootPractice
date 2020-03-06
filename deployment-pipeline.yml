@@ -1,0 +1,11 @@
+pipelines:
+  custom:
+    BUILD:
+    - step:
+        name: Build
+        caches:
+          - gradle
+        script: # Modify the commands below to build your repository
+          - APP_NAME=WeatherReport
+          - ./gradlew :web:build
+          - mv web/build/libs/*.jar app.jar
